@@ -1,0 +1,27 @@
+[package]
+name = 'fund'
+version = '1.0.0'
+
+[addresses]
+fund = "_"
+pyth = "_"
+deployer = "_"
+wormhole = "_"
+fungible_tokens = "_"
+utils = "_"
+
+[dependencies.Pyth]
+git = "https://github.com/pyth-network/pyth-crosschain.git"
+rev = "main"
+subdir = "target_chains/aptos/contracts"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = '6f83bc6d02207298b2dee91133d75538789bf582'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.utils]
+local = "../../libraries/utils"
+
+[dependencies.token-contract]
+local = "../fungible-tokens"

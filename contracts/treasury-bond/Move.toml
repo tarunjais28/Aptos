@@ -1,0 +1,15 @@
+[package]
+name = 'treasury-bond'
+version = '1.0.0'
+
+[addresses]
+treasury_bond = "_"
+utils = "_"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.utils]
+local = "../../libraries/utils"

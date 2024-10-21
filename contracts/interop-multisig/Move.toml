@@ -1,0 +1,19 @@
+[package]
+name = 'interop_multisig'
+version = '1.0.0'
+
+[addresses]
+interop_multisig = "_"
+utils = "_"
+interop_core = "_"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'devnet'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.utils]
+local = "../../libraries/utils"
+
+[dependencies.interop-core]
+local = "../interop-core"

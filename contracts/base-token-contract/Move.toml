@@ -1,0 +1,15 @@
+[package]
+name = 'base-token-contract'
+version = '1.0.0'
+
+[addresses]
+base_token_contract = "_"
+utils = "_"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'devnet'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.utils]
+local = "../../libraries/utils"

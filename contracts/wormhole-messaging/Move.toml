@@ -1,0 +1,13 @@
+[package]
+name = 'wormhole_messaging'
+version = '1.0.0'
+
+[dependencies.Wormhole]
+git = 'https://github.com/wormhole-foundation/wormhole.git'
+rev = 'main'
+subdir = 'aptos/wormhole'
+
+[addresses]
+wormhole = "_"
+deployer = "_"
+wormhole_messaging = "_"

@@ -1,0 +1,19 @@
+[package]
+name = 'interop-core'
+version = '1.0.0'
+
+[addresses]
+interop_core = "_"
+utils = "_"
+base_token_contract = "_"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'main'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.utils]
+local = "../../libraries/utils"
+
+[dependencies.base-token-contract]
+local = "../base-token-contract"

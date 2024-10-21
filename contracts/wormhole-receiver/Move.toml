@@ -1,0 +1,19 @@
+[package]
+name = 'message_extractor'
+version = '1.0.0'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'devnet'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[dependencies.utils]
+local = "../../libraries/utils"
+
+[dependencies.base-token-contract]
+local = "../base-token-contract"
+
+[addresses]
+wormhole_messaging = "_"
+utils = "_"
+base_token_contract = "_"
